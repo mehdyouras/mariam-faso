@@ -7,3 +7,5 @@ Mariam Faso est actif en Afrique du Nord et au Burkina Faso, où ils soutiennent
 
 ### Réseaux sociaux
 
+- [Facebook](https://www.facebook.com/MariamFaso/)
+- Youtube (soon)
