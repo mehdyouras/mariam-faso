@@ -17,7 +17,7 @@ gulp.task("images", function() {
 gulp.task("html", function() {
     gulp.src("src/pug/**/*.pug")
         .pipe(pug())
-        .pipe(gulp.dest("."));
+        .pipe(gulp.dest("assets/"));
 }
 );
 // --- Task for styles
