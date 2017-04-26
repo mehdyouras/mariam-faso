@@ -15,8 +15,10 @@ gulp.task("images", function() {
 
 // --- Task for pug
 gulp.task("html", function() {
-    gulp.src("src/pug/**/*.pug")
-        .pipe(pug())
+    gulp.src(["src/pug/**/*.pug", "!src/pug/partials/**/*.pug"])
+        .pipe(pug({
+            pretty: false
+        }))
         .pipe(gulp.dest("assets/"));
 }
 );
