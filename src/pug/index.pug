@@ -3,14 +3,26 @@ doctype html
 html(lang="fr")
     include partials/_header
     body
-        header
-            h1
-                a <img src="img/logo.png" alt"">Mariam-Faso
-            nav
-                h2 Navigation principale
-            section
-                h2 <span>Dévelopmment,</span> <span>Echange,</span> <span>Solidarité,</span> <span>Education.</span>
+        header.header
+            h1.header__title
+                a <img src="img/logo.png" alt"Logo de Mariam-Faso">Mariam-Faso
+            nav.header__nav
+                h2(aria-hidden="true") Navigation principale
+            section.header__motivational.motivational
+                h2 <span class="motivational__item">Dévelopmment,</span> <span class="motivational__item">Echange,</span> <span class="motivational__item">Solidarité,</span> <span class="motivational__item">Education.</span>
                 a.cta Découvrir nos projets
-        section.wrapper
-            
+        section.home-content
+            h2(aria-hidden=true) Contenu principal
+            div.home-content__questions
+                section.questions.questions_bcg-dark
+                    h3.questions__title Qui sommes nous ?
+                    p.questions__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et quibusdam facilis excepturi animi tempore ea quo beatae quidem quasi. Sed cupiditate labore sint sapiente, nesciunt, obcaecati corporis consectetur inventore!
+                    a.cta(href="#")
+                section.questions.questions_bcg-light
+                    h3.questions__title.questions__title_bcg-dark Nous aider ?
+                    p.questions__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, fugiat quam nihil ipsa, adipisci minima sunt provident quae, dolor nemo repellendus voluptatem expedita saepe omnis soluta blanditiis dolorem iure earum!
+                    a.cta.cta-dark(href="#")
+            section.home-content__events
+                div.
+
             include partials/_footer
