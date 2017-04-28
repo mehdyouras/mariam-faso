@@ -1,0 +1,22 @@
+.cta {
+    @include inuit-font-size(14px);
+    font-family: $headings-font-stack;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    @include inuit-rem(padding, 10px);
+    &::before {
+        font-family: FontAwesome;
+        content: "";
+        @include inuit-rem(margin-right, 5px);
+    }
+    &_dark {
+        color: black;
+        border-color: black;
+    }
+    &_centered {
+        margin: auto;
+    }
+}

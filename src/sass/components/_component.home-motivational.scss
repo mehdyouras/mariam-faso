@@ -1,0 +1,13 @@
+.home-motivational {
+    display: flex;
+    flex-direction: column;
+    &__title {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        background: rgba(0, 0, 0, 0.6);
+        margin-right: auto;
+    }
+}

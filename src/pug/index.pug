@@ -5,26 +5,29 @@ html(lang="fr")
     body
         header.header
             img(src="img/header-bcg.jpg", alt="").background-image
-            h1.header__title
-                a <img src="img/logo.png" alt"Logo de Mariam-Faso">Mariam-Faso
-            nav.site-nav
-                h2(aria-hidden="true") Navigation principale
-                ul
-                    li.site-nav__item
-                        a(href="#") Accueil
-                    li.site-nav__item
-                        a(href="#") Projets
-                    li.site-nav__item
-                        a(href="#") Agenda
-                    li.site-nav__item
-                        a(href="#") à propos
-                    li.site-nav__item.site-nav__item_cta-container
-                        a.cta_no-border(href="#") Faire un don
-                        a.cta_no-border(href="#") Participer
+            div.site-header
+                h1.site-title 
+                    a.site-title <img class="site-title__logo" src="img/logo.png" alt"Logo de Mariam-Faso">Mariam-Faso
+                div.hamburger-menu
+                nav.site-nav
+                    h2(aria-hidden="true") Navigation principale
+                    div.site-nav__close-btn &times;
+                    ul.o-list-bare
+                        li.site-nav__item
+                            a(href="#") Accueil
+                        li.site-nav__item
+                            a(href="#") Projets
+                        li.site-nav__item
+                            a(href="#") Agenda
+                        li.site-nav__item
+                            a(href="#") à propos
+                        li.site-nav__item.site-nav__item_cta-container
+                            a.cta.cta_dark.cta_no-border(href="#") Faire un don
+                            a.cta.cta_dark.cta_no-border(href="#") Participer
             
             section.home-motivational
-                h2 <span class="home-motivational__item">Dévelopmment,</span> <span class="home-motivational__item">Echange,</span> <span class="home-motivational__item">Solidarité,</span> <span class="home-motivational__item">Education.</span>
-                a.cta Découvrir nos projets
+                h2.home-motivational__title <span class="home-motivational__item">Dévelopmment,</span> <span class="home-motivational__item">Echange,</span> <span class="home-motivational__item">Solidarité,</span> <span class="home-motivational__item">Education.</span>
+                a.cta.cta_centered Découvrir nos projets
         
         section.wrapper
             h2(aria-hidden=true) Contenu principal
@@ -44,7 +47,7 @@ html(lang="fr")
                 div.home-events__featured
                     img(src="img/featured-event-bcg.jpg", alt="").background-image
                     a(href="#").cta_centered-middled Action en cours à la une
-                ol.home-events__nexts
+                ol.home-events__nexts.o-list-bare
                     li
                         a(href="#").home-events__nexts-item
                             img(src="img/event1-bcg.jpg", alt="").background-image
