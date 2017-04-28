@@ -2,17 +2,20 @@
    INUITCSS
    ========================================================================== */
 
+
 /**
  * inuitcss, by @csswizardry
  *
  * github.com/inuitcss | inuitcss.com
  */
 
+
 /**
  * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
  * Instead, copy and paste it into your own CSS directory and make additions,
  * extensions, and modifications there.
  */
+
 
 /**
  * CONTENTS
@@ -78,42 +81,22 @@
 @import "settings/settings.config";
 @import "settings/settings.core";
 @import "settings/settings.global";
-
-
-
-
-
 // TOOLS
 @import "tools/tools.rem";
 @import "tools/tools.font-size";
 @import "tools/tools.clearfix";
 @import "tools/tools.hidden";
 @import "node_modules/sass-mq/mq";
-
-
-
-
-
 // GENERIC
 @import "generic/generic.box-sizing";
 @import "generic/generic.normalize";
 @import "generic/generic.reset";
 @import "generic/generic.shared";
-
-
-
-
-
 // ELEMENTS
 @import "elements/elements.page";
 @import "elements/elements.headings";
 @import "elements/elements.images";
 @import "elements/elements.tables";
-
-
-
-
-
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
@@ -129,23 +112,13 @@
 @import "objects/objects.crop";
 @import "objects/objects.tables";
 @import "objects/objects.pack";
-
-
-
-
-
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
 //@import "components/components.buttons";
-
-
-
-
-
+@import "components/components.cta";
 // UTILITIES
 @import "utilities/utilities.clearfix";
-
 $inuit-offsets: true;
 @import "utilities/utilities.widths";
 @import "utilities/utilities.headings";

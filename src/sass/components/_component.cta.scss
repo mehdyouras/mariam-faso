@@ -1,0 +1,6 @@
+.cta {
+    @include inuit-font-size(24px);
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 3px;
+}
