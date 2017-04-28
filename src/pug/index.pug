@@ -4,25 +4,78 @@ html(lang="fr")
     include partials/_header
     body
         header.header
+            img(src="img/header-bcg.jpg", alt="").background-image
             h1.header__title
                 a <img src="img/logo.png" alt"Logo de Mariam-Faso">Mariam-Faso
-            nav.header__nav
+            nav.site-nav
                 h2(aria-hidden="true") Navigation principale
-            section.header__motivational.motivational
-                h2 <span class="motivational__item">Dévelopmment,</span> <span class="motivational__item">Echange,</span> <span class="motivational__item">Solidarité,</span> <span class="motivational__item">Education.</span>
+                ul
+                    li.site-nav__item
+                        a(href="#") Accueil
+                    li.site-nav__item
+                        a(href="#") Projets
+                    li.site-nav__item
+                        a(href="#") Agenda
+                    li.site-nav__item
+                        a(href="#") à propos
+                    li.site-nav__item.site-nav__item_cta-container
+                        a.cta_no-border(href="#") Faire un don
+                        a.cta_no-border(href="#") Participer
+            
+            section.home-motivational
+                h2 <span class="home-motivational__item">Dévelopmment,</span> <span class="home-motivational__item">Echange,</span> <span class="home-motivational__item">Solidarité,</span> <span class="home-motivational__item">Education.</span>
                 a.cta Découvrir nos projets
-        section.home-content
+        
+        section.wrapper
             h2(aria-hidden=true) Contenu principal
-            div.home-content__questions
-                section.questions.questions_bcg-dark
-                    h3.questions__title Qui sommes nous ?
-                    p.questions__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et quibusdam facilis excepturi animi tempore ea quo beatae quidem quasi. Sed cupiditate labore sint sapiente, nesciunt, obcaecati corporis consectetur inventore!
-                    a.cta(href="#")
-                section.questions.questions_bcg-light
+            
+            div.home-questions
+                section.home-questions__item.home-questions__item_bcg-dark
+                    h3.home-questions__title Qui sommes nous ?
+                    p.home-questions__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et quibusdam facilis excepturi animi tempore ea quo beatae quidem quasi. Sed cupiditate labore sint sapiente, nesciunt, obcaecati corporis consectetur inventore!
+                    a.cta(href="#") En savoir plus
+                section.home-questions__item.home-questions__item_bcg-light
                     h3.questions__title.questions__title_bcg-dark Nous aider ?
                     p.questions__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, fugiat quam nihil ipsa, adipisci minima sunt provident quae, dolor nemo repellendus voluptatem expedita saepe omnis soluta blanditiis dolorem iure earum!
-                    a.cta.cta-dark(href="#")
-            section.home-content__events
-                div.
-
+                    a.cta.cta-dark(href="#") Faire un don
+            
+            section.home-events
+                h3(aria-hidden="true") Nos évènements
+                div.home-events__featured
+                    img(src="img/featured-event-bcg.jpg", alt="").background-image
+                    a(href="#").cta_centered-middled Action en cours à la une
+                ol.home-events__nexts
+                    li
+                        a(href="#").home-events__nexts-item
+                            img(src="img/event1-bcg.jpg", alt="").background-image
+                            time 22/06
+                            p Titre de l'event
+                    li
+                        a(href="#").home-events__nexts-item
+                            img(src="img/event2-bcg.jpg", alt="").background-image
+                            time 22/06
+                            p Titre de l'event
+                    li
+                        a(href="#").home-events__nexts-item
+                            img(src="img/event3-bcg.jpg", alt="").background-image
+                            time 22/06
+                            p Titre de l'event
+                    li
+                        a(href="#").home-events__nexts-item
+                            img(src="img/event4-bcg.jpg", alt="").background-image
+                            time 22/06
+                            p Titre de l'event
+                    li.home-events__cta-container
+                        a(href="#").cta Découvrir tous nos évènements
+            section.home-gallery
+                h3(aria-hidden="true") Galerie
+                img(src="img/gallery-bcg.jpg", alt="").background-image
+                a(href="#").cta_centered-middled Découvrir notre galerie
+            section.home-news
+                h3.home-news__title Notre actualité
+                article.home-news__article
+                    h4.article__title <time>12/09</time>Titre de la news
+                    img(src="#", alt="#").article__img
+                    p.article__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, reprehenderit praesentium labore aperiam ab ut necessitatibus, quas, culpa eius blanditiis odit. Quae ipsum necessitatibus, iure modi recusandae omnis laudantium. Non.
+                    a.read-more Lire plus
             include partials/_footer
