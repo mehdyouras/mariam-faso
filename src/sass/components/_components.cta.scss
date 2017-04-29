@@ -2,6 +2,7 @@
     @include inuit-font-size(14px);
     font-family: $headings-font-stack;
     font-weight: 600;
+    max-width: 80%;
     text-transform: uppercase;
     border: 1px solid white;
     @include inuit-rem(border-radius, 3px);
@@ -20,5 +21,8 @@
     }
     &_centered {
         margin: auto;
+    }
+    &_over-image {
+        background: rgba(0, 0, 0, 0.2);
     }
 }
