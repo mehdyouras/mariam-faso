@@ -4,9 +4,11 @@
         &_bcg-dark {
             color: white;
             background: url("../img/questions-dark-bcg.png");
+            background-size: 60%;
         }
         &_bcg-light {
             background: url("../img/questions-light-bcg.png");
+            background-size: 60%;
         }
     }
 }
