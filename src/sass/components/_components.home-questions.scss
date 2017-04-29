@@ -1,0 +1,12 @@
+.home-questions {
+    &__item {
+        padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-small;
+        &_bcg-dark {
+            color: white;
+            background: url("../img/questions-dark-bcg.png");
+        }
+        &_bcg-light {
+            background: url("../img/questions-light-bcg.png");
+        }
+    }
+}
