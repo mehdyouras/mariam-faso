@@ -1,5 +1,7 @@
 .site-header {
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.3)
+    background: rgba(0, 0, 0, 0.3);
+    padding: $inuit-global-spacing-unit*$inuit-global-spacing-unit-factor-small 0;
+    margin-bottom: $inuit-global-spacing-unit;
 }

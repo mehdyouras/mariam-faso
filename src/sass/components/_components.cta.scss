@@ -1,12 +1,14 @@
 .cta {
     @include inuit-font-size(14px);
     font-family: $headings-font-stack;
+    font-weight: 600;
     text-transform: uppercase;
     border: 1px solid white;
     border-radius: 3px;
     color: white;
     text-decoration: none;
     @include inuit-rem(padding, 10px);
+    @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
     &::before {
         font-family: FontAwesome;
         content: "";
