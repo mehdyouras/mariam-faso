@@ -1,0 +1,14 @@
+.home-events {
+    &__featured {
+        height: 300px;
+        @include inuit-rem(height, 300px);
+        display: flex;
+        background: black;
+        justify-content: center;
+        align-items: center;
+        background: url("../img/featured-event-bcg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
