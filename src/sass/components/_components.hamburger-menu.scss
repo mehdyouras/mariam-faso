@@ -2,8 +2,10 @@
     background-image: url("../img/menu.svg");
     background-size: cover;
     order: 1;
-    width: 30px;
-    height: 30px;
+    @include inuit-rem(width,
+    30px);
+    @include inuit-rem(height,
+    30px);
     cursor: pointer;
     margin: 0 2rem;
 }

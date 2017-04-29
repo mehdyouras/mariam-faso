@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     background: rgba(0, 0, 0, 0.3);
-    padding: $inuit-global-spacing-unit*$inuit-global-spacing-unit-factor-small 0;
-    margin-bottom: $inuit-global-spacing-unit;
+    @include inuit-rem(padding-top, $inuit-global-spacing-unit*$inuit-global-spacing-unit-factor-small);
+    @include inuit-rem(padding-bottom, $inuit-global-spacing-unit*$inuit-global-spacing-unit-factor-small);
+    @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
 }

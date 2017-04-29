@@ -9,10 +9,11 @@
     left: 0;
     background-color: white;
     overflow-x: hidden;
-    padding-top: 60px;
+    @include inuit-rem(padding-top, 60px);
     transition: 0.5s;
     &__item {
-        padding: 8px 8px 8px 32px;
+        @include inuit-rem(padding-left, 32px);
+        @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
         text-decoration: none;
         color: #818181;
         display: block;
@@ -27,8 +28,8 @@
         position: absolute;
         cursor: pointer;
         top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
+        @include inuit-rem(right, 25px);
+        @include inuit-font-size(36px);
+        @include inuit-rem(margin-left, 50px);
     }
 }

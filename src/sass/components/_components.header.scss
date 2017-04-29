@@ -1,0 +1,8 @@
+.header {
+    @include inuit-rem(padding-top, $inuit-global-spacing-unit);
+    @include inuit-rem(padding-bottom, $inuit-global-spacing-unit);
+    background-image: url("../img/header-bcg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

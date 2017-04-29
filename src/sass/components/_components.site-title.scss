@@ -1,0 +1,12 @@
+.site-title {
+    text-transform: uppercase;
+    order: 2;
+    color: white;
+    @include inuit-rem(max-height, 36px);
+    font-weight: 600;
+    margin-bottom: 0;
+    &__logo {
+        display: inline-block;
+        @include inuit-rem(max-height, 36px);
+    }
+}

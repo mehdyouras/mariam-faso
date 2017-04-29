@@ -7,7 +7,7 @@
         flex-direction: column;
     }
     &__item {
-        padding-left: $inuit-global-spacing-unit;
+        @include inuit-rem(padding-left, $inuit-global-spacing-unit);
         background: rgba(0, 0, 0, 0.6);
         margin-right: auto;
         @include inuit-font-size(20px);
