@@ -1,29 +1,3 @@
-a {
-    text-decoration: none;
-    color: black;
-}
-
 [aria-hidden="true"] {
     @include inuit-hidden-visually();
-}
-
-.header {
-    padding: $inuit-global-spacing-unit 0;
-    background-image: url("../img/header-bcg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.site-title {
-    text-transform: uppercase;
-    order: 2;
-    color: white;
-    max-height: 36px;
-    font-weight: 600;
-    margin-bottom: 0;
-    &__logo {
-        display: inline-block;
-        max-height: 36px;
-    }
 }
