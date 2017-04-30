@@ -1,14 +1,38 @@
 .home-events {
     &__featured {
-        height: 300px;
-        @include inuit-rem(height, 300px);
+        background: url("../img/featured-event-bcg.jpg");
+    }
+    &__nexts {
         display: flex;
+        margin: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        &-container {
+            //width: 50%;
+            //height: 118px;
+            padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-small;
+            &:first-child {
+                background: #E5803C;
+            }
+            &:nth-child(2) {
+                background: #FFA162;
+            }
+            &:nth-child(3) {
+                background: #FFB786;
+            }
+            &:nth-child(4) {
+                background: #FFD1B1;
+            }
+        }
+        &-link {
+            color: white;
+        }
+    }
+    &__cta-container {
         background: black;
+        display: flex;
         justify-content: center;
         align-items: center;
-        background: url("../img/featured-event-bcg.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        padding: $inuit-global-spacing-unit-small;
     }
 }

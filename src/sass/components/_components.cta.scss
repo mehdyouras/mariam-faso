@@ -2,14 +2,13 @@
     @include inuit-font-size(14px);
     font-family: $headings-font-stack;
     font-weight: 600;
-    max-width: 80%;
+    max-width: 97%;
     text-transform: uppercase;
     border: 1px solid white;
     @include inuit-rem(border-radius, 3px);
     color: white;
     text-decoration: none;
     @include inuit-rem(padding, 10px);
-    @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
     &::before {
         font-family: FontAwesome;
         content: "";
@@ -24,5 +23,8 @@
     }
     &_over-image {
         background: rgba(0, 0, 0, 0.2);
+    }
+    &_no-border {
+        @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
     }
 }
