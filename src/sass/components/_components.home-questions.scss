@@ -3,6 +3,7 @@
     flex-direction: column;
     @media screen and (min-width: 768px) {
         flex-direction: row;
+        margin-top: -$inuit-global-spacing-unit;
     }
     &__item {
         padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-small;

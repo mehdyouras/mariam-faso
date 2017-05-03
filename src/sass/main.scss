@@ -124,6 +124,8 @@
 @import "components/components.site-header";
 @import "components/components.home-motivational";
 @import "components/components.site-nav";
+@import "components/components.site-title";
+@import "components/components.header";
 @import "components/components.hamburger-menu";
 @import "components/components.home-questions";
 @import "components/components.home-events";
@@ -131,7 +133,6 @@
 @import "components/components.home-full-image-block";
 @import "components/components.home-news";
 @import "components/components.footer";
-@import "custom";
 // UTILITIES
 @import "utilities/utilities.clearfix";
 $inuit-offsets: true;

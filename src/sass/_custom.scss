@@ -7,14 +7,6 @@ a {
     @include inuit-hidden-visually();
 }
 
-.header {
-    padding: $inuit-global-spacing-unit 0;
-    background-image: url("../img/header-bcg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .site-title {
     text-transform: uppercase;
     order: 2;

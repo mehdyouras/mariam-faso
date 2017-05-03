@@ -1,15 +1,31 @@
 .home-motivational {
     display: flex;
     flex-direction: column;
+    padding-bottom: $inuit-global-spacing-unit;
+    @media screen and (min-width: 768px) {
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
     &__title {
         color: white;
         display: flex;
         flex-direction: column;
+        @media screen and (min-width: 768px) {
+            display: block;
+            text-align: center;
+            margin-bottom: $inuit-global-spacing-unit-tiny;
+        }
     }
     &__item {
         @include inuit-rem(padding-left, $inuit-global-spacing-unit);
         background: rgba(0, 0, 0, 0.6);
         margin-right: auto;
         @include inuit-font-size(20px);
+        @media screen and (min-width: 768px) {
+            padding: 0;
+            background: 0;
+        }
     }
 }
