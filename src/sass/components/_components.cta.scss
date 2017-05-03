@@ -9,6 +9,10 @@
     color: white;
     text-decoration: none;
     @include inuit-rem(padding, 10px);
+    transition: 0.2s;
+    &:hover {
+        transform: scale(1.1);
+    }
     &::before {
         font-family: FontAwesome;
         content: "";

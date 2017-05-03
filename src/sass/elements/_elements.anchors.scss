@@ -1,4 +1,6 @@
 a {
-    text-decoration: none;
-    color: black;
+    transition: 0.2s;
+    &:hover {
+        text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.66);
+    }
 }
