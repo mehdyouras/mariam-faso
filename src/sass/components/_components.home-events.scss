@@ -1,16 +1,31 @@
 .home-events {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
     &__featured {
         background: url("../img/featured-event-bcg.jpg");
+        height: 300px;
+        @media screen and (min-width: 768px) {
+            height: auto;
+            width: 50%;
+        }
     }
     &__nexts {
         display: flex;
         margin: 0;
         flex-direction: column;
         flex-wrap: wrap;
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
         &-container {
             //width: 50%;
             //height: 118px;
             padding: $inuit-global-spacing-unit-small;
+            transition: 0.2s;
+            &:hover {
+                box-shadow: 10px 10px 5px #888888;
+            }
             &:first-child {
                 background: #E5803C;
             }
