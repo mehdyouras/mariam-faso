@@ -1,0 +1,38 @@
+.home-news {
+    padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-small;
+    &__article {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(n+1) {
+            margin-top: $inuit-global-spacing-unit;
+        }
+    }
+    &__title {
+        &::before {
+            font-family: FontAwesome;
+            content: "\f1ea";
+            @include inuit-rem(margin-right, $inuit-global-spacing-unit-small);
+        }
+    }
+}
+
+.article {
+    &__time {
+        color: white;
+        background: #ffa162;
+        padding: 0 $inuit-global-spacing-unit-small;
+        margin-right: $inuit-global-spacing-unit-small;
+    }
+    &__img {
+        align-self: center;
+        margin-bottom: 8px;
+    }
+}
+
+.read-more {
+    &::after {
+        font-family: FontAwesome;
+        content: "\f061";
+        @include inuit-rem(margin-left, $inuit-global-spacing-unit-tiny);
+    }
+}
