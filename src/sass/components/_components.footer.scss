@@ -1,0 +1,36 @@
+.footer {
+    padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    &__item {
+        width: 80%;
+        max-width: 30em;
+    }
+    &-contact {
+        &__contact-link {
+            color: white;
+            &::after {
+                font-family: FontAwesome;
+                content: "\f061";
+                @include inuit-rem(margin-left, $inuit-global-spacing-unit-tiny);
+            }
+        }
+        &__content-item {
+            display: block;
+            &_icon-phone::before {
+                font-family: FontAwesome;
+                content: "\f095";
+                @include inuit-rem(margin-right, $inuit-global-spacing-unit-tiny);
+                @include inuit-rem(margin-left, -22px);
+            }
+            &_icon-email::before {
+                font-family: FontAwesome;
+                content: "\f1fa";
+                @include inuit-rem(margin-right, $inuit-global-spacing-unit-tiny);
+                @include inuit-rem(margin-left, -22px);
+            }
+        }
+    }
+}
