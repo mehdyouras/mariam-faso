@@ -1,11 +1,29 @@
 .home-news {
     background: white;
     padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-small;
+    display: flex;
+    flex-direction: column;
     &__article {
-        display: flex;
-        flex-direction: column;
-        &:nth-child(n+1) {
+        @media screen and (min-width: 768px) {
+            width: 45%;
+        }
+        &-container {
+            width: 100%;
+            max-width: 30em;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+                max-width: 100%;
+                justify-content: space-between;
+            }
+        }
+        &:nth-child(n+2) {
             margin-top: $inuit-global-spacing-unit;
+            @media screen and (min-width: 768px) {
+                margin-top: 0;
+            }
         }
     }
     &__title {
@@ -27,14 +45,10 @@
     &__img {
         margin-bottom: 8px;
     }
-    &__content {
-        width: 100%;
-        max-width: 30em;
-        align-self: center;
-    }
 }
 
 .read-more {
+    color: #ffa162;
     &::after {
         font-family: FontAwesome;
         content: "\f061";
