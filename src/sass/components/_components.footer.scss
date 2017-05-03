@@ -8,6 +8,9 @@
         width: 80%;
         max-width: 30em;
     }
+    &-partners__item:nth-child(n+1) {
+        margin-top: $inuit-global-spacing-unit-small;
+    }
     &-contact {
         &__contact-link {
             color: white;
@@ -23,13 +26,13 @@
                 font-family: FontAwesome;
                 content: "\f095";
                 @include inuit-rem(margin-right, $inuit-global-spacing-unit-tiny);
-                @include inuit-rem(margin-left, -22px);
+                @include inuit-rem(margin-left, -20px);
             }
             &_icon-email::before {
                 font-family: FontAwesome;
                 content: "\f1fa";
                 @include inuit-rem(margin-right, $inuit-global-spacing-unit-tiny);
-                @include inuit-rem(margin-left, -22px);
+                @include inuit-rem(margin-left, -20px);
             }
         }
     }
