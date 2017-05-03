@@ -4,9 +4,17 @@
     flex-direction: column;
     align-items: center;
     color: white;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
     &__item {
         width: 80%;
         max-width: 30em;
+        @media screen and (min-width: 768px) {
+            width: 45%;
+        }
     }
     &-partners__item:nth-child(n+1) {
         margin-top: $inuit-global-spacing-unit-small;
