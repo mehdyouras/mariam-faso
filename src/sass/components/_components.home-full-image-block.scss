@@ -1,6 +1,5 @@
 .home-full-image-block {
-    height: 300px;
-    @include inuit-rem(height, 300px);
+    //@include inuit-rem(height, 300px);
     display: flex;
     justify-content: center;
     align-items: center;
