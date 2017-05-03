@@ -23,20 +23,25 @@
             //height: 118px;
             padding: $inuit-global-spacing-unit-small;
             transition: 0.2s;
+            background-image: url("../img/fa-arrow-right.svg");
+            background-repeat: no-repeat;
+            background-position: 110% 50%;
+            background-size: 5%;
             &:hover {
                 box-shadow: 10px 10px 5px #888888;
+                background-position: 90% 50%;
             }
             &:first-child {
-                background: #E5803C;
+                background-color: #E5803C;
             }
             &:nth-child(2) {
-                background: #FFA162;
+                background-color: #FFA162;
             }
             &:nth-child(3) {
-                background: #FFB786;
+                background-color: #FFB786;
             }
             &:nth-child(4) {
-                background: #FFD1B1;
+                background-color: #FFD1B1;
             }
         }
         &-link {

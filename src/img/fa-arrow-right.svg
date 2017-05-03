@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>fa-arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="12" font-family="FontAwesome" font-weight="normal">
+        <g id="Tablet-Portrait" transform="translate(-92.000000, -1494.000000)" fill="#FFFFFF">
+            <g id="News" transform="translate(0.000000, 1196.000000)">
+                <g id="NewsItem" transform="translate(35.000000, 57.000000)">
+                    <text id="fa-arrow-right">
+                        <tspan x="57" y="251"></tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
