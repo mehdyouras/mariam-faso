@@ -21,27 +21,21 @@
         &-container {
             //width: 50%;
             //height: 118px;
+            
             padding: $inuit-global-spacing-unit-small;
             transition: 0.2s;
+            filter: grayscale(100%);
+            background: #ffa162;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #ffa162, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #ffa162, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             background-image: url("../img/fa-arrow-right.svg");
             background-repeat: no-repeat;
             background-position: 110% 50%;
             background-size: 5%;
+            transition: 0.2s;
             &:hover {
-                box-shadow: 10px 10px 5px #888888;
                 background-position: 90% 50%;
-            }
-            &:first-child {
-                background-color: #E5803C;
-            }
-            &:nth-child(2) {
-                background-color: #FFA162;
-            }
-            &:nth-child(3) {
-                background-color: #FFB786;
-            }
-            &:nth-child(4) {
-                background-color: #FFD1B1;
+                filter: grayscale(0%);
             }
         }
         &-link {

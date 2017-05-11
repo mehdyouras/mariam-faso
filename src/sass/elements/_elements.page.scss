@@ -16,7 +16,10 @@
  */
 
 html {
-    background: #ffa162;
+    background: #ffa162;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa162, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffa162, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     font-size: ($inuit-global-font-size / 16px) * 1em;
     /* [1] */
     font-family: $content-font-stack;
