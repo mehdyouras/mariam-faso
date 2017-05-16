@@ -1,7 +1,7 @@
 .site-header {
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     @include inuit-rem(padding-top, $inuit-global-spacing-unit*$inuit-global-spacing-unit-factor-small);
     @include inuit-rem(padding-bottom, $inuit-global-spacing-unit*$inuit-global-spacing-unit-factor-small);
     @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
@@ -9,5 +9,8 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: inuit-rem($inuit-global-spacing-unit-small) inuit-rem($inuit-global-spacing-unit);
+    }
+    @media screen and (min-width: 2000px) {
+        justify-content: center;
     }
 }
