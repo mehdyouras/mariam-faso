@@ -12,6 +12,21 @@
     overflow-x: hidden;
     @include inuit-rem(padding-top, 60px);
     transition: 0.3s;
+    @media screen and (min-width: 1270px) {
+        height: auto;
+        width: auto;
+        transform: translatex(0);
+        position: static;
+        background: 0;
+        padding-top: 0;
+    }
+    &__list {
+        @media screen and (min-width: 1270px) {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    }
     &__item {
         @include inuit-rem(padding-left, 32px);
         @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
@@ -19,10 +34,28 @@
         color: #818181;
         display: block;
         transition: 0.3s;
+        @media screen and (min-width: 1270px) {
+            display: inline-block;
+            color: white;
+            margin-bottom: 0;
+        }
         &_cta-container {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            @media screen and (min-width: 1270px) {
+                display: inline-flex;
+                flex-direction: row;
+                border: 1px solid white;
+                border-radius: 3px;
+                padding: 0;
+                @include inuit-rem(margin-left, 32px);
+            }
+        }
+    }
+    &__link {
+        @media screen and (min-width: 1270px) {
+            color: white;
         }
     }
     &__close-btn {
@@ -32,5 +65,8 @@
         @include inuit-rem(right, 25px);
         @include inuit-font-size(36px);
         @include inuit-rem(margin-left, 50px);
+        @media screen and (min-width: 1270px) {
+            display: none;
+        }
     }
 }

@@ -11,18 +11,18 @@ html(lang="fr")
                 nav.site-nav
                     h2(aria-hidden="true") Navigation principale
                     div.site-nav__close-btn &times;
-                    ul.o-list-bare
+                    ul.o-list-bare.site-nav__list
                         li.site-nav__item
-                            a(href="#") Accueil
+                            a.site-nav__link(href="#") Accueil
                         li.site-nav__item
-                            a(href="#") Projets
+                            a.site-nav__link(href="#") Projets
                         li.site-nav__item
-                            a(href="#") Agenda
+                            a.site-nav__link(href="#") Agenda
                         li.site-nav__item
-                            a(href="#") À propos
+                            a.site-nav__link(href="#") À propos
                         li.site-nav__item.site-nav__item_cta-container
-                            a.cta.cta_dark.cta_no-border(href="#") Faire un don
-                            a.cta.cta_dark.cta_no-border(href="#") Participer
+                            a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Faire un don
+                            a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Participer
             
             section.home-motivational
                 h2.home-motivational__title <span class="home-motivational__item">Dévelopmment,</span> <span class="home-motivational__item">Echange,</span> <span class="home-motivational__item">Solidarité,</span> <span class="home-motivational__item">Education.</span>
@@ -33,13 +33,15 @@ html(lang="fr")
             
             div.home-questions
                 section.home-questions__item.home-questions__item_bcg-dark
-                    h3.home-questions__title Qui sommes nous ?
-                    p.home-questions__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et quibusdam facilis excepturi animi tempore ea quo beatae quidem quasi. Sed cupiditate labore sint sapiente, nesciunt, obcaecati corporis consectetur inventore!
-                    a.cta(href="#") En savoir plus
+                    div.home-questions__content-wrapper_left
+                        h3.home-questions__title Qui sommes nous ?
+                        p.home-questions__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et quibusdam facilis excepturi animi tempore ea quo beatae quidem quasi. Sed cupiditate labore sint sapiente, nesciunt, obcaecati corporis consectetur inventore!
+                        a.cta(href="#") En savoir plus
                 section.home-questions__item.home-questions__item_bcg-light
-                    h3.questions__title.questions__title_dark Nous aider ?
-                    p.questions__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, fugiat quam nihil ipsa, adipisci minima sunt provident quae, dolor nemo repellendus voluptatem expedita saepe omnis soluta blanditiis dolorem iure earum!
-                    a.cta.cta_dark(href="#") Faire un don
+                    div.home-questions__content-wrapper_right
+                        h3.questions__title.questions__title_dark Nous aider ?
+                        p.questions__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, fugiat quam nihil ipsa, adipisci minima sunt provident quae, dolor nemo repellendus voluptatem expedita saepe omnis soluta blanditiis dolorem iure earum!
+                        a.cta.cta_dark(href="#") Faire un don
             
             section.home-events
                 h3(aria-hidden="true") Nos évènements
