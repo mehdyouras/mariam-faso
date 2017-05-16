@@ -1,8 +1,8 @@
 const openNav = function() {
-    document.querySelector(".site-nav").style.width = "250px";
+    document.querySelector(".site-nav").style.transform = "translatex(0)";
 }
 const closeNav = function() {
-    document.querySelector(".site-nav").style.width = "0";
+    document.querySelector(".site-nav").style.transform = "translatex(-250px)";
 }
 
 
