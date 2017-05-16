@@ -9,7 +9,7 @@
         align-items: flex-start;
         justify-content: space-around;
     }
-    @media screen and (max-width: 2000px) {
+    @media screen and (min-width: 2000px) {
         justify-content: center;
     }
     &__item {
@@ -28,7 +28,7 @@
         }
     }
     &-contact {
-        @media screen and (max-width: 2000px) {
+        @media screen and (min-width: 2000px) {
             margin-left: inuit-rem(90px);
         }
         &__contact-link {

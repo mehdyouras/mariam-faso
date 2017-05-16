@@ -11,7 +11,7 @@
         @media screen and (min-width: 1100px) {
             width: auto;
         }
-        @media screen and (max-width: 2000px) {
+        @media screen and (min-width: 2000px) {
             &:nth-child(2n) {
                 margin-left: inuit-rem(90px);
             }
@@ -45,7 +45,7 @@
             content: "\f1ea";
             @include inuit-rem(margin-right, $inuit-global-spacing-unit-small);
         }
-        @media screen and (min-width: 2000px) {
+        @media screen and (min-width: 768px) {
             display: flex;
             justify-content: center;
         }
