@@ -1,0 +1,44 @@
+- var page_title = "Actions";
+doctype html
+html(lang="fr")
+    include partials/_header
+    body
+        header.header.header_small
+            div.site-header
+                h1.site-title 
+                    a(href="index.html").site-title <img class="site-title__logo" src="img/logo.png" alt"Logo de Mariam-Faso">Mariam-Faso
+                div.hamburger-menu
+                nav.site-nav
+                    h2(aria-hidden="true") Navigation principale
+                    div.site-nav__close-btn &times;
+                    ul.o-list-bare.site-nav__list
+                        li.site-nav__item
+                            a.site-nav__link(href="index.html") Accueil
+                        li.site-nav__item
+                            a.site-nav__link(href="projects.html") Projets
+                        li.site-nav__item.active
+                            a.site-nav__link(href="#") Agenda
+                        li.site-nav__item
+                            a.site-nav__link(href="#") À propos
+                        li.site-nav__item.site-nav__item_cta-container
+                            a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Faire un don
+                            a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Participer
+        section.wrapper
+            header.section-header.section-header_actions
+                div.section-header__content-container
+                    h2.section-header__title Les actions en cours
+                    p.section-header__intro Les différentes actions que nous organisons tout au long de l'année nous permette de récolter du materiels, des vètements, des jouets <i>etc</i>. Afin de les redistribuer lors de nos prochains voyages.
+            section.actions.content-wrapper
+                article.actions__item
+                    header.actions__header
+                        h3.actions__title Collecte de jouets
+                        p.actions__timespan Du <time class="actions__time">22/06</time> au <time class="actions__time">22/09</time>.
+                    div.actions__descriptions-container
+                        p.actions__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nobis unde, distinctio voluptates beatae molestiae, maxime esse corporis perspiciatis nihil deleniti accusamus temporibus voluptas placeat hic similique ad iusto nostrum!
+                article.actions__item
+                    header.actions__header
+                        h3.actions__title Collecte de vêtements
+                        p.actions__timespan Du <time class="actions__time">22/06</time> au <time class="actions__time">22/09</time>.
+                    div.actions__descriptions-container
+                        p.actions__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nobis unde, distinctio voluptates beatae molestiae, maxime esse corporis perspiciatis nihil deleniti accusamus temporibus voluptas placeat hic similique ad iusto nostrum!
+            include partials/_footer
