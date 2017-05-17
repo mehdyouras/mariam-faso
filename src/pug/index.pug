@@ -7,17 +7,17 @@ html(lang="fr")
             div.site-header
                 h1.site-title 
                     a(href="index.html").site-title <img class="site-title__logo" src="img/logo.png" alt"Logo de Mariam-Faso">Mariam-Faso
-                div.hamburger-menu
+                a(href="#").hamburger-menu
                 nav.site-nav
                     h2(aria-hidden="true") Navigation principale
-                    div.site-nav__close-btn &times;
+                    a(href="#").site-nav__close-btn &times;
                     ul.o-list-bare.site-nav__list
                         li.site-nav__item.active
                             a.site-nav__link(href="#") Accueil
                         li.site-nav__item
                             a.site-nav__link(href="projects.html") Projets
                         li.site-nav__item.site-nav__item_dropdown
-                            a.site-nav__link.site-nav__link_dropdown(href="agenda.html") Agenda
+                            a.site-nav__link.site-nav__link_dropdown(href="agenda.html" tabindex="-1") Agenda
                             ul.o-list-bare.site-nav__dropdown
                                 li.site-nav__dropdown-item
                                     a.site-nav__dropdown-link(href="actions.html") Actions en cours
@@ -28,7 +28,6 @@ html(lang="fr")
                         li.site-nav__item.site-nav__item_cta-container
                             a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Faire un don
                             a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Participer
-            
             section.home-motivational
                 h2.home-motivational__title <span class="home-motivational__item">Dévelopmment,</span> <span class="home-motivational__item">Echange,</span> <span class="home-motivational__item">Solidarité,</span> <span class="home-motivational__item">Education.</span>
                 a.cta.cta_centered.cta_over-image(href="#") Découvrir nos projets

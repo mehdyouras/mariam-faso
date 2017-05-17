@@ -101,22 +101,33 @@
                 @include inuit-rem(padding-right, 6px);
             }
             padding: 12px 0;
-            &:hover {
-                //background: #ffa162;
-                //background: linear-gradient(to right,#ffa162,#f46b45);
+            @media screen and (max-width: 1270px) {
+                padding-left: 32px;
+            }
+            &:hover, 
+            &:focus {
                 background: white;
                 box-shadow: 2px 7px 10px rgba(0,0,0,0.3);
+                @media screen and (max-width: 1270px) {
+                    box-shadow: none;
+                    &::after {
+                        display: none;
+                    }
+                }
                 & .site-nav__link {
                     color: black;
                 }
                 & .site-nav__dropdown {
-                    //height: auto;
                     opacity: 1;
                     padding-top: $inuit-global-spacing-unit-tiny;
                     padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-tiny;
                     background: white;
                     box-shadow: 2px 7px 10px rgba(0,0,0,0.3);
                     width: 10em;
+                    @media screen and (max-width: 1270px) {
+                        position: static;
+                        box-shadow: none;
+                    }
                 }
                 &::after {
                     color: black;
@@ -127,6 +138,9 @@
     &__link {
         &_dropdown {
             padding: 12px 6px;
+            @media screen and (max-width: 1270px) {
+                padding-left: 0;
+            }
         }
     }
     &__dropdown {
@@ -141,5 +155,34 @@
                 margin-top: $inuit-global-spacing-unit-small;
             }
         }
+    }
+}
+
+.accessible-access {
+    background: white;
+    box-shadow: 2px 7px 10px rgba(0,0,0,0.3);
+    @media screen and (max-width: 1270px) {
+        box-shadow: none;
+        &::after {
+            display: none;
+        }
+    }
+    & .site-nav__link {
+        color: black;
+    }
+    & .site-nav__dropdown {
+        opacity: 1;
+        padding-top: $inuit-global-spacing-unit-tiny;
+        padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-tiny;
+        background: white;
+        box-shadow: 2px 7px 10px rgba(0,0,0,0.3);
+        width: 10em;
+        @media screen and (max-width: 1270px) {
+            position: static;
+            box-shadow: none;
+        }
+    }
+    &::after {
+        color: black;
     }
 }
