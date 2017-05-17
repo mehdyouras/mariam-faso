@@ -4,7 +4,7 @@
     padding: $inuit-global-spacing-unit;
     display: flex;
     justify-content: space-around;
-     @media screen and (min-width: 1000px) { 
+    @media screen and (min-width: 1000px) { 
         &::after {
             content: "\f0ac";
             font-family: fontAwesome;
