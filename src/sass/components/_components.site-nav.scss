@@ -34,6 +34,14 @@
         color: #818181;
         display: block;
         transition: 0.3s;
+        position: relative;
+        &.active::after {
+            position: absolute;
+            content: "";
+            width: 25%;
+            border-bottom: 3px solid #ffa162;
+            display: block;
+        }
         @media screen and (min-width: 1270px) {
             display: inline-block;
             color: white;
@@ -54,8 +62,12 @@
         }
     }
     &__link {
+        transition: 0.2s;
         @media screen and (min-width: 1270px) {
             color: white;
+        }
+        &:hover {
+            color:#ffa162;
         }
     }
     &__close-btn {
