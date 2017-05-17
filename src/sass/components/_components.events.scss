@@ -3,8 +3,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     &__item {
-        //max-width: inuit-rem(480px);
-        position: relative;
+        max-width: 30em;
+        max-width: 30em;
         width: 30%;
         margin-bottom: 2*$inuit-global-spacing-unit;
         @media screen and (max-width: 860px) {
@@ -18,11 +18,8 @@
         }
     }
     &__header {
-        //position: absolute;
         color: white;
         padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
-        //top: 3em;
-        //left: 3em;
         background: #ffa162;
         background: linear-gradient(to left,#ffa162,#f46b45);
     }

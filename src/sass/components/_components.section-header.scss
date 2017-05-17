@@ -1,5 +1,6 @@
-.page-header {
+.section-header {
     margin-top: -24px;
+    margin-bottom: $inuit-global-spacing-unit;
     background: url("../img/questions-light-bcg.png");
     padding: $inuit-global-spacing-unit;
     display: flex;
@@ -15,6 +16,14 @@
         }
         &_events::after {
             content: "\f073";
+            font-family: fontAwesome;
+            font-size: 200px;
+            font-size: 12.5rem;
+            line-height: 1.08;
+            margin-left: .2em;
+        }
+        &_actions::after {
+            content: "\f0e7";
             font-family: fontAwesome;
             font-size: 200px;
             font-size: 12.5rem;
