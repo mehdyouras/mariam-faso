@@ -1,0 +1,29 @@
+.events {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__item {
+        //max-width: inuit-rem(480px);
+        position: relative;
+        width: 30%;
+        margin-bottom: 2*$inuit-global-spacing-unit;
+        @media screen and (max-width: 860px) {
+            width: 45%;
+        }
+        @media screen and (max-width: 600px) {
+            width: 85%;
+        }
+        @media screen and (max-width: 450px) {
+            width: 100%;
+        }
+    }
+    &__header {
+        //position: absolute;
+        color: white;
+        padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
+        //top: 3em;
+        //left: 3em;
+        background: #ffa162;
+        background: linear-gradient(to left,#ffa162,#f46b45);
+    }
+}
