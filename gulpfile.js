@@ -38,6 +38,13 @@ gulp.task("js", function() {
         .pipe(babel())
         .pipe(gulp.dest("assets/js"));
 });
+
+// -- Task for fonts
+gulp.task("fonts", function() {
+    gulp.src("src/fonts/**")
+        .pipe(gulp.dest("assets/fonts"));
+});
+
 // --- Watch tasks
 gulp.task("watch", function() {
     gulp.watch("src/img/**", ["images"]);
@@ -46,5 +53,5 @@ gulp.task("watch", function() {
     gulp.watch("src/js/**", ["js"]);
 });
 // --- Aliases
-gulp.task("default", ["css", "html", "js", "images"]);
+gulp.task("default", ["css", "html", "js", "images", "fonts"]);
 gulp.task("work", ["default", "watch"]);
