@@ -16,8 +16,13 @@ html(lang="fr")
                             a.site-nav__link(href="index.html") Accueil
                         li.site-nav__item.active
                             a.site-nav__link(href="#") Projets
-                        li.site-nav__item
-                            a.site-nav__link(href="agenda.html") Agenda
+                        li.site-nav__item.site-nav__item_dropdown
+                            a.site-nav__link.site-nav__link_dropdown(href="agenda.html") Agenda
+                            ul.o-list-bare.site-nav__dropdown
+                                li.site-nav__dropdown-item
+                                    a.site-nav__dropdown-link(href="actions.html") Actions en cours
+                                li.site-nav__dropdown-item
+                                    a.site-nav__dropdown-link(href="events.html") Evenements
                         li.site-nav__item
                             a.site-nav__link(href="#") À propos
                         li.site-nav__item.site-nav__item_cta-container
