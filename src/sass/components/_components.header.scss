@@ -12,4 +12,7 @@
     @media screen and (min-width: 1600px) {
         min-height: 100vh;
     }
+    &_small {
+        min-height: 350px;
+    }
 }
