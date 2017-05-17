@@ -1,0 +1,27 @@
+- var page_title = "Projets";
+doctype html
+html(lang="fr")
+    include partials/_header
+    body
+        header.header.header_small
+            div.site-header
+                h1.site-title 
+                    a(href="index.html").site-title <img class="site-title__logo" src="img/logo.png" alt"Logo de Mariam-Faso">Mariam-Faso
+                div.hamburger-menu
+                nav.site-nav
+                    h2(aria-hidden="true") Navigation principale
+                    div.site-nav__close-btn &times;
+                    ul.o-list-bare.site-nav__list
+                        li.site-nav__item
+                            a.site-nav__link(href="#") Accueil
+                        li.site-nav__item
+                            a.site-nav__link(href="#") Projets
+                        li.site-nav__item
+                            a.site-nav__link(href="#") Agenda
+                        li.site-nav__item
+                            a.site-nav__link(href="#") À propos
+                        li.site-nav__item.site-nav__item_cta-container
+                            a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Faire un don
+                            a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Participer
+        section.wrapper
+            include partials/_footer
