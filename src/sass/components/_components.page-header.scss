@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-around;
     @media screen and (min-width: 1000px) { 
-        &::after {
+        &_projects::after {
             content: "\f0ac";
             font-family: fontAwesome;
             font-size: 200px;
@@ -13,11 +13,18 @@
             line-height: 1.08;
             margin-left: .2em;
         }
+        &_events::after {
+            content: "\f073";
+            font-family: fontAwesome;
+            font-size: 200px;
+            font-size: 12.5rem;
+            line-height: 1.08;
+            margin-left: .2em;
+        }
      }
-    &__quote {
+    &__intro {
         max-width: 30em;
         padding: $inuit-global-spacing-unit;
         border-left: 3px solid #ffa162;
-        font-style: italic;
     }
 }
