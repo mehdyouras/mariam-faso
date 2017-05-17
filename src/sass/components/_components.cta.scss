@@ -34,7 +34,7 @@
          @media screen and (min-width: 1270px) {
              margin-bottom: 0;
              border: 0;
-             &:nth-child(2) {
+             &:nth-child(n+2) {
                  border-left: 1px solid white;
                  border-radius: 0;
              }
