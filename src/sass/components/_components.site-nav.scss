@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     background-color: white;
-    overflow-x: hidden;
+    overflow: visible;
     @include inuit-rem(padding-top, 60px);
     transition: 0.3s;
     @media screen and (min-width: 1270px) {
@@ -43,6 +43,8 @@
             display: block;
         }
         @media screen and (min-width: 1270px) {
+            @include inuit-rem(padding-left, 0px);
+            @include inuit-rem(margin-left, 32px);
             display: inline-block;
             color: white;
             margin-bottom: 0;
@@ -63,6 +65,7 @@
     }
     &__link {
         transition: 0.2s;
+        //padding: 3px;
         @media screen and (min-width: 1270px) {
             color: white;
         }
@@ -79,6 +82,63 @@
         @include inuit-rem(margin-left, 50px);
         @media screen and (min-width: 1270px) {
             display: none;
+        }
+    }
+    &__dropdown {
+        display: none;
+        height: 0;
+        position: absolute;
+        transition: 0.2s;
+    }
+}
+
+
+///////////////////////|
+// Dropdown nav menu///|
+///////////////////////|
+
+.site-nav {
+    &__item{
+        &_dropdown {
+            &::after {
+                font-family: FontAwesome;
+                font-size: 0.8em;
+                content: "\f078";
+                @include inuit-rem(padding-right, 6px);
+            }
+            padding: 12px 0;
+            &:hover {
+                background: #ffa162;
+                background: linear-gradient(to right,#ffa162,#f46b45);
+                & .site-nav__link {
+                    color: white;
+                }
+                & .site-nav__dropdown {
+                    display: block;
+                    height: auto;
+                    padding-top: $inuit-global-spacing-unit-tiny;
+                    padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-tiny;
+                    background: #ffa162;
+                    background: linear-gradient(to right,#ffa162,#f46b45);
+                    width: 10em;
+                }
+            }
+        }
+    }
+    &__link {
+        &_dropdown {
+            padding: 12px 6px;
+        }
+    }
+    &__dropdown {
+        margin-top: 12px;
+        &-item {
+            &:nth-child(n+2) {
+                margin-top: $inuit-global-spacing-unit-small;
+            }
+        }
+        &-link {
+            color: white;
         }
     }
 }
