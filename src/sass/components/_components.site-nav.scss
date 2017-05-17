@@ -84,12 +84,6 @@
             display: none;
         }
     }
-    &__dropdown {
-        display: none;
-        height: 0;
-        position: absolute;
-        transition: 0.2s;
-    }
 }
 
 
@@ -108,19 +102,24 @@
             }
             padding: 12px 0;
             &:hover {
-                background: #ffa162;
-                background: linear-gradient(to right,#ffa162,#f46b45);
+                //background: #ffa162;
+                //background: linear-gradient(to right,#ffa162,#f46b45);
+                background: white;
+                box-shadow: 2px 7px 10px rgba(0,0,0,0.3);
                 & .site-nav__link {
-                    color: white;
+                    color: black;
                 }
                 & .site-nav__dropdown {
-                    display: block;
-                    height: auto;
+                    //height: auto;
+                    opacity: 1;
                     padding-top: $inuit-global-spacing-unit-tiny;
                     padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-tiny;
-                    background: #ffa162;
-                    background: linear-gradient(to right,#ffa162,#f46b45);
+                    background: white;
+                    box-shadow: 2px 7px 10px rgba(0,0,0,0.3);
                     width: 10em;
+                }
+                &::after {
+                    color: black;
                 }
             }
         }
@@ -131,14 +130,16 @@
         }
     }
     &__dropdown {
+        transition: 0.2s;
         margin-top: 12px;
+        opacity: 0;
+        //height: 0;
+        position: absolute;
+        transition: 0.2s;
         &-item {
             &:nth-child(n+2) {
                 margin-top: $inuit-global-spacing-unit-small;
             }
-        }
-        &-link {
-            color: white;
         }
     }
 }
