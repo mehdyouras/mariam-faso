@@ -1,0 +1,32 @@
+.projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: $inuit-global-spacing-unit;
+}
+
+.project-excerpt {
+    margin-bottom: $inuit-global-spacing-unit;   
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        margin-top: $inuit-global-spacing-unit;
+        @media screen and (max-width: 845px) {
+            flex-direction: column;
+        }
+    }
+    &__thumbnail {
+        width: 100%;
+        max-width: 30em;
+        margin-top: 4px;
+        margin-right: $inuit-global-spacing-unit;
+        @media screen and (max-width: 845px) {
+            margin-right: 0;
+            margin-bottom: $inuit-global-spacing-unit;
+        }
+    }
+    &__header {
+        //display: flex;
+        //align-items: center;
+    }
+}
