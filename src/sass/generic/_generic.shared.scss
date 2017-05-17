@@ -24,6 +24,10 @@ fieldset {
   @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
 }
 
+blockquote {
+  font-style: italic;
+}
+
 
 /**
  * Consistent indentation for lists.

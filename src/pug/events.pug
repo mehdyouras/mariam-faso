@@ -1,0 +1,32 @@
+- var page_title = "Agenda";
+doctype html
+html(lang="fr")
+    include partials/_header
+    body
+        header.header.header_small
+            div.site-header
+                h1.site-title 
+                    a(href="index.html").site-title <img class="site-title__logo" src="img/logo.png" alt"Logo de Mariam-Faso">Mariam-Faso
+                div.hamburger-menu
+                nav.site-nav
+                    h2(aria-hidden="true") Navigation principale
+                    div.site-nav__close-btn &times;
+                    ul.o-list-bare.site-nav__list
+                        li.site-nav__item
+                            a.site-nav__link(href="index.html") Accueil
+                        li.site-nav__item
+                            a.site-nav__link(href="projects.html") Projets
+                        li.site-nav__item.active
+                            a.site-nav__link(href="#") Agenda
+                        li.site-nav__item
+                            a.site-nav__link(href="#") À propos
+                        li.site-nav__item.site-nav__item_cta-container
+                            a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Faire un don
+                            a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Participer
+        div.wrapper
+            header.page-header.page-header_events
+                div.page-header__content-container
+                    h2.page-header__title Les évènements
+                    p.page-header__intro Les différents evenements que nous organisons chaque année nous permette d'atteindre nos objectis financier ainsi que de faire connaitre nos missions et notre ASBL en général.
+            div.page-wrapper
+            include partials/_footer
