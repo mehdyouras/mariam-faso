@@ -21,10 +21,13 @@
             width: 45%;
         }
     }
-    &-partners__item:nth-child(n+1) {
-        margin-top: $inuit-global-spacing-unit-small;
-    }
     &-partners {
+        &__item {
+            max-width: 16em;
+            &:nth-child(n+1) {
+                margin-top: $inuit-global-spacing-unit-small;
+            }
+        }
         @media screen and (max-width: 768px) {
             @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
         }
