@@ -13,8 +13,8 @@ html(lang="fr")
                     div.site-nav__close-btn &times;
                     ul.o-list-bare.site-nav__list
                         li.site-nav__item
-                            a.site-nav__link(href="#") Accueil
-                        li.site-nav__item
+                            a.site-nav__link(href="index.html") Accueil
+                        li.site-nav__item.active
                             a.site-nav__link(href="#") Projets
                         li.site-nav__item
                             a.site-nav__link(href="#") Agenda
@@ -24,4 +24,8 @@ html(lang="fr")
                             a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Faire un don
                             a.site-nav__link.cta.cta_dark.cta_no-border(href="#") Participer
         section.wrapper
+            header.page-header
+                div.page-header__content-container
+                    h2.page-header__title Nos projets
+                    blockquote.page-header__quote « Chez Mariam Faso, nous sommes convaincus de l’importance de l’instruction dans la lutte contre la pauvreté. Ce que nous voulons, c’est apporter aux jeunes une perspective d’avenir. »
             include partials/_footer
