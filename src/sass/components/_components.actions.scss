@@ -1,6 +1,39 @@
 .actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: $inuit-global-spacing-unit;
+    flex-direction: column;
+    @media screen and (max-width: 920px) {
+        flex-direction: column;        
+    }
     &__item {
-        width: 45%;
-        //max-width: 30em;
+        display: flex;
+        align-items: flex-start;
+        &:nth-child(2n) {
+            margin-top: $inuit-global-spacing-unit;
+        }
+        @media screen and (min-width: 920px) {
+            &:nth-child(2n) {
+                //margin-left: $inuit-global-spacing-unit;
+            }
+        }
+        @media screen and (max-width: 630px) {
+            flex-direction: column;
+        }
+    }
+    &__header {
+        max-width: 12em;
+        color: white;
+        padding: $inuit-global-spacing-unit-small;
+        margin-right: $inuit-global-spacing-unit;
+        background: #ffa162;
+        background: linear-gradient(to left,#ffa162,#f46b45);
+        @media screen and (max-width: 630px) {
+            max-width: none;
+            margin-bottom: $inuit-global-spacing-unit-small;
+        }
+    }
+    &__timespan {
+        margin: 0;  
     }
 }
